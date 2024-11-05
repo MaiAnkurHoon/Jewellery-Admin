@@ -22,7 +22,7 @@ const CategoriesPage = async (
             createdAt:"desc"
         }
     })
-    // @ts-ignore
+    // @ts-ignore-error
     const formattedCategories:CategoryColumn[] = categories.map((item:any) =>({
         id:item.id,
         name:item.name,

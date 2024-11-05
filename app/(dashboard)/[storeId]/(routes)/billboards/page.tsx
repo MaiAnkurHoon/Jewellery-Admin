@@ -19,12 +19,14 @@ const BillboardsPage = async (
             createdAt:"desc"
         }
     })
-    // @ts-ignore
-    const formattedBillboard:BillboardColumn[] = billboards.map((item:any) =>({
-        id:item.id,
-        label:item.label,
-        createdAt:format(item.createdAt,"dd/MM/yyyy"),
 
+    const formattedBillboard:BillboardColumn[] = billboards.map((item:any) =>({
+        id: item.id,
+        label: item.label,
+        createdAt: format(item.createdAt, "dd/MM/yyyy"),
+        amount: item.amount,
+        status: item.status,
+        email: item.email,
     }))
 
 
