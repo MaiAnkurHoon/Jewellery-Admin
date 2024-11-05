@@ -10,6 +10,9 @@ export type BillboardColumn = {
   amount: number
   status: "pending" | "processing" | "success" | "failed"
   email: string
+  name: string
+  value: string
+  createdAt: string
 }
 
 export const columns: ColumnDef<BillboardColumn>[] = [

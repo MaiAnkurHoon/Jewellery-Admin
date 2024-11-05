@@ -27,6 +27,8 @@ const BillboardsPage = async (
         amount: item.amount,
         status: item.status,
         email: item.email,
+        name: item.name,
+        value: item.value,
     }))
 
 
