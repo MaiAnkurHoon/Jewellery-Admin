@@ -27,7 +27,7 @@ export const AlertModal:React.FC<AlertModalProps> = ({
         return ()=>{
             setIsMounted(false)
         }
-    })
+    },[])
     if(!isMounted){
         return null
     }
